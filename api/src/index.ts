@@ -1,5 +1,8 @@
-let texto: string;
+import express from 'express';
 
-texto = "123";
+const app = express();
 
-console.log(texto);
+const port = 3001;
+app.listen(port, () => {
+    console.log(`Server in running on http://localhost:${port}`);
+});
